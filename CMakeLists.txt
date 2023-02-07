@@ -16,7 +16,7 @@ project(bop_renderer)
 set(LLVM_DIR "/opt/llvm")
 set(OSMESA_DIR "/opt/osmesa")
 set(OSMESA_PREFIX "/opt/osmesa")
-# set(OSMESA_INCLUDE_DIRS "/opt/osmesa/include/GL")
+set(OSMESA_INCLUDE_DIRS "/opt/osmesa/include/GL")
 set(PYTHON_PREFIX "/usr/lib/x86_64-linux-gnu")
 set(PYTHON_INCLUDE_DIRS "/usr/include/python3.8")
 

@@ -18,17 +18,17 @@ set(OSMESA_DIR "/opt/osmesa")
 set(OSMESA_PREFIX "/opt/osmesa")
 # set(OSMESA_INCLUDE_DIRS "/opt/osmesa/include/GL")
 set(PYTHON_PREFIX "/usr/lib/x86_64-linux-gnu")
-#set(PYTHON_INCLUDE_DIRS "/usr/include/python3.8")
+#set(PYTHON_INCLUDE_DIRS "/usr/include/python3.6")
 
 # Enable support for C++11.
 set(CPP_STANDARD -std=c++11)
 add_definitions(${CPP_STANDARD})
 
 # Python library (tested with Python 3.6).
-set(PYTHON_LIBRARIES $ENV{PYTHON_PREFIX}/lib/libpython3.8m.so)
+set(PYTHON_LIBRARIES $ENV{PYTHON_PREFIX}/lib/libpython3.6m.so)
 
 # Directory with Python includes (tested with Python 3.6).
-set(PYTHON_INCLUDE_DIRS $ENV{PYTHON_PREFIX}/include/python3.8m)
+set(PYTHON_INCLUDE_DIRS $ENV{PYTHON_PREFIX}/include/python3.6m)
 
 # OSMesa.
 set(OSMESA_LIBRARIES $ENV{OSMESA_PREFIX}/lib/libOSMesa32.so)
@@ -36,7 +36,7 @@ include_directories($ENV{OSMESA_PREFIX}/include)
 
 # Pybind11.
 set(PYBIND11_CPP_STANDARD ${CPP_STANDARD})
-set(PYBIND11_PYTHON_VERSION 3.8)
+set(PYBIND11_PYTHON_VERSION 3.6)
 add_subdirectory(3rd/pybind11)
 
 # Others.

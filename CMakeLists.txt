@@ -17,8 +17,6 @@ set(LLVM_DIR "/opt/llvm")
 set(OSMESA_DIR "/opt/osmesa")
 set(OSMESA_PREFIX "/opt/osmesa")
 set(OSMESA_INCLUDE_DIRS "/opt/osmesa/include/GL")
-/app/bop_renderer/osmesa-install/build/mesa-17.1.6/include/GL/osmesa.h
-/opt/osmesa/include/GL/osmesa.h
 set(PYTHON_PREFIX "/usr/lib/x86_64-linux-gnu")
 set(PYTHON_INCLUDE_DIRS "/usr/include/python3.8")
 

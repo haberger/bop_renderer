@@ -1,7 +1,7 @@
 #include "Context.h"
 #include <vector>
 
-#include "GL/osmesa.h"
+#include "/opt/osmesa/include/GL/osmesa.h"
 
 struct OSMUserData {
     OSMesaContext ctx;

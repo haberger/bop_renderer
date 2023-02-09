@@ -16,9 +16,9 @@ project(bop_renderer)
 set(LLVM_DIR "/opt/llvm")
 set(OSMESA_DIR "/opt/osmesa")
 set(OSMESA_PREFIX "/opt/osmesa")
-set(OSMESA_INCLUDE_DIRS "/opt/osmesa/include/GL")
+#set(OSMESA_INCLUDE_DIRS "/opt/osmesa/include/GL")
 set(PYTHON_PREFIX "/usr/lib/x86_64-linux-gnu")
-set(PYTHON_INCLUDE_DIRS "/usr/include/python3.8")
+#set(PYTHON_INCLUDE_DIRS "/usr/include/python3.8")
 
 # Enable support for C++11.
 set(CPP_STANDARD -std=c++11)
@@ -33,8 +33,8 @@ set(PYTHON_LIBRARIES $ENV{PYTHON_PREFIX}/lib/libpython3.8.so)
 # OSMesa.
 set(OSMESA_LIBRARIES $ENV{OSMESA_PREFIX}/lib/libOSMesa32.so)
 include_directories($ENV{OSMESA_PREFIX}/include)
-include_directories($ENV{OSMESA_PREFIX}/include/GL)
-link_directories(/opt/osmesa/lib)
+#include_directories($ENV{OSMESA_PREFIX}/include/GL)
+#link_directories(/opt/osmesa/lib)
 
 #target_include_directories(test PRIVATE ${OSMESA_INCLUDE_DIRS})
 #set(SOURCES /app/bop_renderer/src/context/OSMContext.cpp ${OSMESA_INCLUDE_DIRS}/osmesa.h)
@@ -66,7 +66,7 @@ set(HEADERFILES
         src/context/Context.h
         src/Texture.h
         src/Shaders.h
-        /opt/osmesa/include/GL/osmesa.h
+        #/opt/osmesa/include/GL/osmesa.h
         )
 
 # Source files.

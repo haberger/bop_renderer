@@ -34,6 +34,10 @@ set(PYTHON_LIBRARIES $ENV{PYTHON_PREFIX}/lib/libpython3.8.so)
 set(OSMESA_LIBRARIES $ENV{OSMESA_PREFIX}/lib/libOSMesa32.so)
 include_directories($ENV{OSMESA_PREFIX}/include)
 include_directories($ENV{OSMESA_PREFIX}/include/GL)
+link_directories(/opt/osmesa/lib)
+
+target_include_directories(test PRIVATE ${OSMESA_INCLUDE_DIRS})
+set(SOURCES /app/bop_renderer/src/context/OSMContext.cpp ${OSMESA_INCLUDE_DIRS}/osmesa.h)
 
 # Pybind11.
 set(PYBIND11_CPP_STANDARD ${CPP_STANDARD})
